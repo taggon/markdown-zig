@@ -29,12 +29,14 @@ other inline constructs. Extensions are enabled per document via `ParseOptions`.
 
 ## Installation
 
-Add to your `build.zig.zon`:
+Add to your `build.zig.zon` (run `zig fetch --save=markdown <url>` to fill in
+the hash):
 
 ```zig
 .dependencies = .{
     .markdown = .{
-        .url = "https://github.com/taggon/markdown-zig/archive/<commit>.tar.gz",
+        .url = "https://github.com/taggon/markdown-zig/archive/v0.1.0.tar.gz",
+        .hash = "...",
     },
 },
 ```
