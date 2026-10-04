@@ -1,0 +1,68 @@
+[
+  {
+    "example": 1,
+    "section": "MDX error: unclosed expression",
+    "markdown": "{unclosed",
+    "html": null
+  },
+  {
+    "example": 2,
+    "section": "MDX error: unclosed JSX element",
+    "markdown": "<unclosed>",
+    "html": null
+  },
+  {
+    "example": 3,
+    "section": "MDX error: lone opening brace",
+    "markdown": "{",
+    "html": null
+  },
+  {
+    "example": 4,
+    "section": "MDX error: HTML comment",
+    "markdown": "<!-- comment -->",
+    "html": null
+  },
+  {
+    "example": 5,
+    "section": "MDX error: HTML comment in text",
+    "markdown": "a <!-- c --> b",
+    "html": null
+  },
+  {
+    "example": 6,
+    "section": "MDX error: CDATA",
+    "markdown": "<![CDATA[x]]>",
+    "html": null
+  },
+  {
+    "example": 7,
+    "section": "MDX error: processing instruction",
+    "markdown": "<?php ?>",
+    "html": null
+  },
+  {
+    "example": 8,
+    "section": "MDX error: attribute grammar violation",
+    "markdown": "<a =b>",
+    "html": null
+  },
+  {
+    "example": 9,
+    "section": "MDX error: unclosed text element",
+    "markdown": "a <b>c",
+    "html": null
+  },
+  {
+    "example": 10,
+    "section": "MDX error: mismatched closing tag",
+    "markdown": "<A></B>",
+    "html": null
+  },
+  {
+    "example": 11,
+    "section": "MDX error: unclosed attribute expression",
+    "markdown": "<A b={x>",
+    "html": null
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "example": 1,
+    "section": "MDX flow expression",
+    "markdown": "{a}",
+    "html": ""
+  },
+  {
+    "example": 2,
+    "section": "MDX flow expression",
+    "markdown": "{a + b}",
+    "html": ""
+  },
+  {
+    "example": 3,
+    "section": "MDX flow expression",
+    "markdown": "{a}\n\nparagraph",
+    "html": "<p>paragraph</p>"
+  },
+  {
+    "example": 4,
+    "section": "MDX text expression",
+    "markdown": "a {b} c",
+    "html": "<p>a  c</p>"
+  },
+  {
+    "example": 5,
+    "section": "MDX text expression",
+    "markdown": "Hello {name}!",
+    "html": "<p>Hello !</p>"
+  },
+  {
+    "example": 6,
+    "section": "MDX expression",
+    "markdown": "{}",
+    "html": ""
+  },
+  {
+    "example": 7,
+    "section": "MDX expression",
+    "markdown": "{ {a} }",
+    "html": ""
+  },
+  {
+    "example": 8,
+    "section": "MDX expression in code (not parsed)",
+    "markdown": "```\n{not an expression}\n```",
+    "html": "<pre><code>{not an expression}\n</code></pre>"
+  },
+  {
+    "example": 9,
+    "section": "MDX expression in heading",
+    "markdown": "# Heading {expr}",
+    "html": "<h1>Heading </h1>"
+  },
+  {
+    "example": 10,
+    "section": "MDX expression in list item",
+    "markdown": "- item {expr}",
+    "html": "<ul>\n<li>item </li>\n</ul>"
+  },
+  {
+    "example": 11,
+    "section": "flow expression must own its line",
+    "markdown": "{a} tail",
+    "html": "<p> tail</p>"
+  },
+  {
+    "example": 12,
+    "section": "multi-line expression keeps flow judgement (§14.8)",
+    "markdown": "{a +\nb} tail",
+    "html": "<p>tail</p>"
+  },
+  {
+    "example": 13,
+    "section": "flow expression at 2 columns of indentation",
+    "markdown": "  {a}",
+    "html": ""
+  },
+  {
+    "example": 14,
+    "section": "expression chain is not flow",
+    "markdown": "{a}{b}",
+    "html": "<p></p>"
+  },
+  {
+    "example": 15,
+    "section": "flow expression interrupts a paragraph",
+    "markdown": "a\n{b}",
+    "html": "<p>a</p>"
+  },
+  {
+    "example": 16,
+    "section": "flow expression after a JSX tag",
+    "markdown": "<A/> {x}",
+    "html": ""
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "example": 1,
+    "section": "Tables (extension)",
+    "markdown": "| foo | bar |\n| --- | --- |\n| baz | bim |",
+    "html": "<table>\n<thead>\n<tr>\n<th>foo</th>\n<th>bar</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>baz</td>\n<td>bim</td>\n</tr>\n</tbody>\n</table>"
+  },
+  {
+    "example": 2,
+    "section": "Tables (extension)",
+    "markdown": "| abc | defghi |\n:-: | -----------:\nbar | baz",
+    "html": "<table>\n<thead>\n<tr>\n<th align=\"center\">abc</th>\n<th align=\"right\">defghi</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">bar</td>\n<td align=\"right\">baz</td>\n</tr>\n</tbody>\n</table>"
+  },
+  {
+    "example": 3,
+    "section": "Tables (extension)",
+    "markdown": "| f\\|oo  |\n| ------ |\n| b `\\|` az |\n| b **\\|** im |",
+    "html": "<table>\n<thead>\n<tr>\n<th>f|oo</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>b <code>|</code> az</td>\n</tr>\n<tr>\n<td>b <strong>|</strong> im</td>\n</tr>\n</tbody>\n</table>"
+  },
+  {
+    "example": 4,
+    "section": "Tables (extension)",
+    "markdown": "| abc | def |\n| --- | --- |\n| bar | baz |\n> bar",
+    "html": "<table>\n<thead>\n<tr>\n<th>abc</th>\n<th>def</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>bar</td>\n<td>baz</td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>bar</p>\n</blockquote>"
+  },
+  {
+    "example": 5,
+    "section": "Tables (extension)",
+    "markdown": "| abc | def |\n| --- | --- |\n| bar | baz |\nbar\n\nbar",
+    "html": "<table>\n<thead>\n<tr>\n<th>abc</th>\n<th>def</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>bar</td>\n<td>baz</td>\n</tr>\n<tr>\n<td>bar</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>bar</p>"
+  },
+  {
+    "example": 6,
+    "section": "Tables (extension)",
+    "markdown": "| abc | def |\n| --- |\n| bar |",
+    "html": "<p>| abc | def |\n| --- |\n| bar |</p>"
+  },
+  {
+    "example": 7,
+    "section": "Tables (extension)",
+    "markdown": "| abc | def |\n| --- | --- |\n| bar |\n| bar | baz | boo |",
+    "html": "<table>\n<thead>\n<tr>\n<th>abc</th>\n<th>def</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>bar</td>\n<td></td>\n</tr>\n<tr>\n<td>bar</td>\n<td>baz</td>\n</tr>\n</tbody>\n</table>"
+  },
+  {
+    "example": 8,
+    "section": "Tables (extension)",
+    "markdown": "| abc | def |\n| --- | --- |",
+    "html": "<table>\n<thead>\n<tr>\n<th>abc</th>\n<th>def</th>\n</tr>\n</thead>\n</table>"
+  },
+  {
+    "example": 9,
+    "section": "Task list items (extension)",
+    "markdown": "- [ ] foo\n- [x] bar",
+    "html": "<ul>\n<li><input disabled=\"\" type=\"checkbox\"> foo</li>\n<li><input checked=\"\" disabled=\"\" type=\"checkbox\"> bar</li>\n</ul>"
+  },
+  {
+    "example": 10,
+    "section": "Task list items (extension)",
+    "markdown": "- [x] foo\n  - [ ] bar\n  - [x] baz\n- [ ] bim",
+    "html": "<ul>\n<li><input checked=\"\" disabled=\"\" type=\"checkbox\"> foo\n<ul>\n<li><input disabled=\"\" type=\"checkbox\"> bar</li>\n<li><input checked=\"\" disabled=\"\" type=\"checkbox\"> baz</li>\n</ul>\n</li>\n<li><input disabled=\"\" type=\"checkbox\"> bim</li>\n</ul>"
+  },
+  {
+    "example": 11,
+    "section": "Strikethrough (extension)",
+    "markdown": "~~Hi~~ Hello, world!",
+    "html": "<p><del>Hi</del> Hello, world!</p>"
+  },
+  {
+    "example": 12,
+    "section": "Strikethrough (extension)",
+    "markdown": "This ~~has a\n\nnew paragraph~~.",
+    "html": "<p>This ~~has a</p>\n<p>new paragraph~~.</p>"
+  },
+  {
+    "example": 13,
+    "section": "Autolinks (extension)",
+    "markdown": "www.commonmark.org",
+    "html": "<p><a href=\"http://www.commonmark.org\">www.commonmark.org</a></p>"
+  },
+  {
+    "example": 14,
+    "section": "Autolinks (extension)",
+    "markdown": "Visit www.commonmark.org/help for more information.",
+    "html": "<p>Visit <a href=\"http://www.commonmark.org/help\">www.commonmark.org/help</a> for more information.</p>"
+  },
+  {
+    "example": 15,
+    "section": "Autolinks (extension)",
+    "markdown": "Visit www.commonmark.org.\n\nVisit www.commonmark.org/a.b.",
+    "html": "<p>Visit <a href=\"http://www.commonmark.org\">www.commonmark.org</a>.</p>\n<p>Visit <a href=\"http://www.commonmark.org/a.b\">www.commonmark.org/a.b</a>.</p>"
+  },
+  {
+    "example": 16,
+    "section": "Autolinks (extension)",
+    "markdown": "www.google.com/search?q=Markup+(business)\n\nwww.google.com/search?q=Markup+(business)))\n\n(www.google.com/search?q=Markup+(business))\n\n(www.google.com/search?q=Markup+(business)",
+    "html": "<p><a href=\"http://www.google.com/search?q=Markup+(business)\">www.google.com/search?q=Markup+(business)</a></p>\n<p><a href=\"http://www.google.com/search?q=Markup+(business)\">www.google.com/search?q=Markup+(business)</a>))</p>\n<p>(<a href=\"http://www.google.com/search?q=Markup+(business)\">www.google.com/search?q=Markup+(business)</a>)</p>\n<p>(<a href=\"http://www.google.com/search?q=Markup+(business)\">www.google.com/search?q=Markup+(business)</a></p>"
+  },
+  {
+    "example": 17,
+    "section": "Autolinks (extension)",
+    "markdown": "www.google.com/search?q=(business))+ok",
+    "html": "<p><a href=\"http://www.google.com/search?q=(business))+ok\">www.google.com/search?q=(business))+ok</a></p>"
+  },
+  {
+    "example": 18,
+    "section": "Autolinks (extension)",
+    "markdown": "www.google.com/search?q=commonmark&hl=en\n\nwww.google.com/search?q=commonmark&hl;",
+    "html": "<p><a href=\"http://www.google.com/search?q=commonmark&amp;hl=en\">www.google.com/search?q=commonmark&amp;hl=en</a></p>\n<p><a href=\"http://www.google.com/search?q=commonmark\">www.google.com/search?q=commonmark</a>&amp;hl;</p>"
+  },
+  {
+    "example": 19,
+    "section": "Autolinks (extension)",
+    "markdown": "www.commonmark.org/he<lp",
+    "html": "<p><a href=\"http://www.commonmark.org/he\">www.commonmark.org/he</a>&lt;lp</p>"
+  },
+  {
+    "example": 20,
+    "section": "Autolinks (extension)",
+    "markdown": "http://commonmark.org\n\n(Visit https://encrypted.google.com/search?q=Markup+(business))\n\nAnonymous FTP is available at ftp://foo.bar.baz.",
+    "html": "<p><a href=\"http://commonmark.org\">http://commonmark.org</a></p>\n<p>(Visit <a href=\"https://encrypted.google.com/search?q=Markup+(business)\">https://encrypted.google.com/search?q=Markup+(business)</a>)</p>\n<p>Anonymous FTP is available at <a href=\"ftp://foo.bar.baz\">ftp://foo.bar.baz</a>.</p>"
+  },
+  {
+    "example": 21,
+    "section": "Autolinks (extension)",
+    "markdown": "foo@bar.baz",
+    "html": "<p><a href=\"mailto:foo@bar.baz\">foo@bar.baz</a></p>"
+  },
+  {
+    "example": 22,
+    "section": "Autolinks (extension)",
+    "markdown": "hello@mail+xyz.example isn't valid, but hello+xyz@mail.example is.",
+    "html": "<p>hello@mail+xyz.example isn't valid, but <a href=\"mailto:hello+xyz@mail.example\">hello+xyz@mail.example</a> is.</p>"
+  },
+  {
+    "example": 23,
+    "section": "Autolinks (extension)",
+    "markdown": "a.b-c_d@a.b\n\na.b-c_d@a.b.\n\na.b-c_d@a.b-\n\na.b-c_d@a.b_",
+    "html": "<p><a href=\"mailto:a.b-c_d@a.b\">a.b-c_d@a.b</a></p>\n<p><a href=\"mailto:a.b-c_d@a.b\">a.b-c_d@a.b</a>.</p>\n<p>a.b-c_d@a.b-</p>\n<p>a.b-c_d@a.b_</p>"
+  },
+  {
+    "example": 24,
+    "section": "Disallowed Raw HTML (extension)",
+    "markdown": "<strong> <title> <style> <em>\n\n<blockquote>\n  <xmp> is disallowed.  <XMP> is also disallowed.\n</blockquote>",
+    "html": "<p><strong> &lt;title> &lt;style> <em></p>\n<blockquote>\n  &lt;xmp> is disallowed.  &lt;XMP> is also disallowed.\n</blockquote>"
+  }
+]

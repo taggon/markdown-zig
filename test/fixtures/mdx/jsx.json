@@ -1,0 +1,218 @@
+[
+  {
+    "example": 1,
+    "section": "MDX JSX self-closing (flow)",
+    "markdown": "<Component />",
+    "html": ""
+  },
+  {
+    "example": 2,
+    "section": "MDX JSX with children",
+    "markdown": "<Component>Hello</Component>",
+    "html": "<p>Hello</p>"
+  },
+  {
+    "example": 3,
+    "section": "MDX JSX with markdown children",
+    "markdown": "<Component>\n\n**bold**\n\n</Component>",
+    "html": "<p><strong>bold</strong></p>"
+  },
+  {
+    "example": 4,
+    "section": "MDX JSX with static attribute",
+    "markdown": "<a href=\"https://example.com\">text</a>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 5,
+    "section": "MDX JSX with expression attribute",
+    "markdown": "<a x={1 + 2}>text</a>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 6,
+    "section": "MDX JSX with spread attribute",
+    "markdown": "<div {...props}>text</div>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 7,
+    "section": "MDX JSX fragment",
+    "markdown": "<>fragment</>",
+    "html": "<p>fragment</p>"
+  },
+  {
+    "example": 8,
+    "section": "MDX JSX nested elements",
+    "markdown": "<Outer><Inner>text</Inner></Outer>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 9,
+    "section": "MDX JSX text (inline)",
+    "markdown": "a <b>c</b> d",
+    "html": "<p>a c d</p>"
+  },
+  {
+    "example": 10,
+    "section": "MDX JSX self-closing before paragraph",
+    "markdown": "<Component />\n\nparagraph",
+    "html": "<p>paragraph</p>"
+  },
+  {
+    "example": 11,
+    "section": "MDX JSX multiline self-closing",
+    "markdown": "<Component\n  prop=\"value\"\n/>",
+    "html": ""
+  },
+  {
+    "example": 12,
+    "section": "MDX JSX with multiple children",
+    "markdown": "<Component>\n\nFirst paragraph.\n\nSecond paragraph.\n\n</Component>",
+    "html": "<p>First paragraph.</p>\n<p>Second paragraph.</p>"
+  },
+  {
+    "example": 13,
+    "section": "jsx text element children",
+    "markdown": "a <b><i>c</i></b> d",
+    "html": "<p>a c d</p>"
+  },
+  {
+    "example": 14,
+    "section": "jsx text element children",
+    "markdown": "a <b>**bold**</b> d",
+    "html": "<p>a <strong>bold</strong> d</p>"
+  },
+  {
+    "example": 15,
+    "section": "jsx text element children",
+    "markdown": "a <b>x {y} z</b> d",
+    "html": "<p>a x  z d</p>"
+  },
+  {
+    "example": 16,
+    "section": "jsx text element children",
+    "markdown": "a <b>&amp;</b> d",
+    "html": "<p>a &amp; d</p>"
+  },
+  {
+    "example": 17,
+    "section": "jsx text element children",
+    "markdown": "a <b>`code`</b> d",
+    "html": "<p>a <code>code</code> d</p>"
+  },
+  {
+    "example": 18,
+    "section": "jsx flow nesting",
+    "markdown": "<Outer>\n\n<Inner>text</Inner>\n\n</Outer>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 19,
+    "section": "jsx multiline opening tag",
+    "markdown": "<Component\n  a=\"1\"\n  b={2}\n>text</Component>",
+    "html": "<p>text</p>"
+  },
+  {
+    "example": 20,
+    "section": "close-tag search skips expressions (multiline opening tag)",
+    "markdown": "<Box\n> {</Box>} </Box>",
+    "html": "<p> </p>"
+  },
+  {
+    "example": 21,
+    "section": "a fake close tag inside an expression does not close the element",
+    "markdown": "<a\nb=\"1\">{\"</a>\"}</a>",
+    "html": "<p></p>"
+  },
+  {
+    "example": 22,
+    "section": "flow element must own its line",
+    "markdown": "<A/> tail",
+    "html": "<p> tail</p>"
+  },
+  {
+    "example": 23,
+    "section": "multi-line opening tag keeps flow judgement (§14.8)",
+    "markdown": "<A\n>x</A> tail",
+    "html": "<p>x</p>\n<p>tail</p>"
+  },
+  {
+    "example": 24,
+    "section": "flow chain on one line",
+    "markdown": "<A/><B/>",
+    "html": ""
+  },
+  {
+    "example": 25,
+    "section": "flow chain with a container",
+    "markdown": "<A><B/></A>",
+    "html": ""
+  },
+  {
+    "example": 26,
+    "section": "flow element interrupts a paragraph",
+    "markdown": "a\n<A/>",
+    "html": "<p>a</p>"
+  },
+  {
+    "example": 27,
+    "section": "non-flow element stays in the paragraph",
+    "markdown": "a\n<A>b</A>",
+    "html": "<p>a\nb</p>"
+  },
+  {
+    "example": 28,
+    "section": "flow element at 1 column of indentation",
+    "markdown": " <Component />",
+    "html": ""
+  },
+  {
+    "example": 29,
+    "section": "same-name flow nesting",
+    "markdown": "<A>\n\n<A>\n\nx\n\n</A>\n\n</A>",
+    "html": "<p>x</p>"
+  },
+  {
+    "example": 30,
+    "section": "indented closing tag",
+    "markdown": "<Component>\n\nx\n\n  </Component>",
+    "html": "<p>x</p>"
+  },
+  {
+    "example": 31,
+    "section": "multiline attribute expression",
+    "markdown": "<A\n  b={\n  1 + 2\n  }\n/>",
+    "html": ""
+  },
+  {
+    "example": 32,
+    "section": "flow element in a blockquote",
+    "markdown": "> <A>\n>\n> x\n>\n> </A>",
+    "html": "<blockquote>\n<p>x</p>\n</blockquote>"
+  },
+  {
+    "example": 33,
+    "section": "block child of a flow element",
+    "markdown": "<A>\n\n# h\n\n</A>",
+    "html": "<h1>h</h1>"
+  },
+  {
+    "example": 34,
+    "section": "list inside a flow element",
+    "markdown": "<A>\n\n- item\n\n</A>",
+    "html": "<ul>\n<li>item</li>\n</ul>"
+  },
+  {
+    "example": 35,
+    "section": "blockquote inside a flow element",
+    "markdown": "<A>\n> quote\n</A>",
+    "html": "<blockquote>\n<p>quote</p>\n</blockquote>"
+  },
+  {
+    "example": 36,
+    "section": "closing tag inside a code fence is content",
+    "markdown": "<A>\n\n```\n</A>\n```\n\n</A>",
+    "html": "<pre><code>&lt;/A&gt;\n</code></pre>"
+  }
+]
